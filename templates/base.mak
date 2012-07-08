@@ -7,7 +7,11 @@
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
     <meta name="keywords" content="Asmara, Eritrean, Ethiopian, Restaurant, San Diego" />
     <meta name="description" content="A weblog about software, electronics and cycling" />
+    ##<meta name="author" content="Nabil Tewolde">
 
+    ##<meta itemprop="name" content="Nabil Tewolde's Blog">
+    ##<meta itemprop="description" content="A weblog about software, electronics and cycling">
+    ##<meta itemprop="image" content="">
 
     <style> 
       body {
@@ -19,7 +23,7 @@
     <link href='http://fonts.googleapis.com/css?family=Advent+Pro:400,600,700' rel='stylesheet' type='text/css'>
     <link href="css/style.css" rel="stylesheet">
     <link type="text/plain" rel="author" href="humans.txt" />
-    
+    <%block name="header_css"/>
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -45,6 +49,7 @@
 	    <span class="icon-bar"></span>
 	    <span class="icon-bar"></span>
 	  </a>
+	  ##<a class="brand" href="#">Asmara</a>
 
 	  <div class="row-fluid">
 	    <div class="span1 hidden-phone">
@@ -53,12 +58,10 @@
 	    <div class="span10">	      
 	      <div class="nav-collapse">
 		<ul class="nav">
-		  <li class='
-active
-'><a href="index.html">Home</a></li>
-		  <li class=''><a href="menu.html">Menu</a></li>
-		  <li class=''><a href="events.html">Events</a></li>
-		  <li class=''><a href="contact.html">Contact</a></li>
+		  <li class='<%block name="current_page_index"/>'><a href="index.html">Home</a></li>
+		  <li class='<%block name="current_page_menu"/>'><a href="menu.html">Menu</a></li>
+		  <li class='<%block name="current_page_events"/>'><a href="events.html">Events</a></li>
+		  <li class='<%block name="current_page_contact"/>'><a href="contact.html">Contact</a></li>
 		</ul>
 	      </div>
 	    </div>
@@ -68,48 +71,7 @@ active
     </div>
 
     <div class="container-fluid">
-       
-
-
-
-
-<div class="row-fluid">
-  <div class="span1 hidden-phone">
-  </div>
-
-  <div class="span10">
-    
-    <div class="post-container" style="">
-      <p ALIGN=center><iframe width="560" height="315" style="margin: 10px;" src="http://www.youtube.com/embed/AB0RODOs2xY" frameborder="0" allowfullscreen></iframe></p>
-
-    </div>
-
-    <div class="post-container" style="padding: 30px;height: auto;">            
-      <div class="row-fluid">    
-	<div class="span4">
-	  <h3>San Diego's Best</h3>
-	  <p><i><a href="http://www.sandiegomagazine.com/San-Diego-Magazine/June-2011/Best-2011-Restaurants/">The San Diego Magazine</a> selected Asmara Restaurant as the
-	  best 2011 Eritrean & Ethiopian Restaurant in San Dego, CA.</i></p>
-	  <p ALIGN=center><img src="img/sdmlogo.png" /></p>
-	</div>	
-	<div class="span4">
-	  <h3>Location</h3>	  
-	  <a target="_blank" href="https://maps.google.com/maps?q=4155+University+Avenue+San+Diego,+CA+92105&hl=en&sll=43.85869,-79.298632&sspn=0.00902,0.01796&hnear=4155+University+Ave,+San+Diego,+California+92105&t=m&z=16">
-	    <img src="img/map.png" alt="google map" />
-	    </a>
-	</div>	
-	<div class="span4">
-	  <h3>Hours</h3>
-	  Mon - Sun 11am - 10pm
-	</div>	            
-      </div>
-    </div>
-    
-  </div> <!-- span 10 -->
-  
-</div>
-<br/>
-
+      ${next.body()}
     </div> <!-- /container -->
     
     <br/>
@@ -120,7 +82,7 @@ active
     <script type="text/javascript" src="js/global-app-ck.js"></script>
     <script type="text/javascript" src="js/bootstrap-ck.js"></script>
 
-    
+    <%block name="footer_js"/>
 
     <script type="text/javascript">
       (function() {
