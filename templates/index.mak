@@ -10,47 +10,47 @@ active
 
   jQuery(document).ready(function($) {
 
-$('.carousel').carousel({
+  $('.carousel').carousel({
   interval: 3000
-})
-});
+  })
+  });
 
-// 2. This code loads the IFrame Player API code asynchronously.
-      var tag = document.createElement('script');
-      tag.src = "http://www.youtube.com/player_api";
-      var firstScriptTag = document.getElementsByTagName('script')[0];
-      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+  // 2. This code loads the IFrame Player API code asynchronously.
+  var tag = document.createElement('script');
+  tag.src = "http://www.youtube.com/player_api";
+  var firstScriptTag = document.getElementsByTagName('script')[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-// 3. This function creates an <iframe> (and YouTube player)
-      //    after the API code downloads.
-      var player;
-      function onYouTubePlayerAPIReady() {
-        player = new YT.Player('player', {
-          height: '267',
-          width: '480',
-          videoId: 'AB0RODOs2xY',
-          events: {
-            'onReady': onPlayerReady,
-            'onStateChange': onPlayerStateChange
-          }
-        });
-      }
+  // 3. This function creates an <iframe> (and YouTube player)
+    //    after the API code downloads.
+    var player;
+    function onYouTubePlayerAPIReady() {
+    player = new YT.Player('player', {
+    height: '267',
+    width: '480',
+    videoId: 'AB0RODOs2xY',
+    events: {
+    'onReady': onPlayerReady,
+    'onStateChange': onPlayerStateChange
+    }
+    });
+    }
 
-// 4. The API will call this function when the video player is ready.
-      function onPlayerReady(event) {
-        //event.target.playVideo();
-      }
+    // 4. The API will call this function when the video player is ready.
+    function onPlayerReady(event) {
+    //event.target.playVideo();
+    }
 
-      // 5. The API calls this function when the player's state changes.
-      //    The function indicates that when playing a video (state=1),
-      //    the player should play for six seconds and then stop.
-      var done = false;
-      function onPlayerStateChange(event) {
-       if (event.data == YT.PlayerState.PLAYING) {
+    // 5. The API calls this function when the player's state changes.
+    //    The function indicates that when playing a video (state=1),
+    //    the player should play for six seconds and then stop.
+    var done = false;
+    function onPlayerStateChange(event) {
+    if (event.data == YT.PlayerState.PLAYING) {
     alert('playing');
-         $('.carousel').carousel('pause');
-       }
-      }
+    $('.carousel').carousel('pause');
+    }
+    }
 
 </script>
 </%block>
@@ -61,51 +61,55 @@ $('.carousel').carousel({
 
   <div class="span10">
     
-    <div id="index-header" class="post-container" style="padding: 30px;height: 270px;">
+    <div id="index-header" class="post-container" style="padding: 30px;">
+      <div class="row-fluid">
 
-      <div class="span4">     
-	<p style="text-align: center">
-	  <img class="" src="img/asmara_logo.png" /> 
-	<p class="tag-line" style="text-align: center">
-	  The Finest Eritrean & Ethiopian Authentic Food
-	</p>	
-	
-	<ul class="nav" data-target=".nav-collapse">
-	  <li class="social-button"><g:plusone size="medium" href="http://asmararestaurantsd.com/"></g:plusone></li>
-	  <li class="social-button">
-            <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://asmararestaurantsd.com/" data-text="Asmara Restaurant San Diego">Tweet</a>
-	  </li>
-	  <li class="social-button">
-	    <div class="fb-like" data-href="http://asmararestaurantsd.com" data-send="false" data-layout="button_count" data-width="100" data-show-faces="false"></div>
-	  </li>
-	</ul>
-	
-	</p>
-      </div>
+	<div class="span4">     
+	  <p style="text-align: center; padding-bottom: 10px;">
+	    <img class="" src="img/asmara_logo.png" /> 
+	  </p>	
+	  <p class="tag-line" style="text-align: center; padding-bottom: 10px;">
+	    The Finest Eritrean & Ethiopian Authentic Food
+	  </p>	
+	  
+	  <p style="text-align: center; padding-bottom: 10px;">
+	    <ul class="nav" style="padding-bottom: 10px;width:300px;">
+	      <li class="social-button"><g:plusone size="medium" href="http://asmararestaurantsd.com/"></g:plusone></li>
+	      <li class="social-button">
+		<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://asmararestaurantsd.com/" data-text="Asmara Restaurant San Diego">Tweet</a>
+	      </li>
+	      <li class="social-button">
+		<div class="fb-like" data-href="http://asmararestaurantsd.com" data-send="false" data-layout="button_count" data-width="100" data-show-faces="false"></div>
+	      </li>
+	    </ul>
+	  </p>
 
-      <div class="span8">     
-      <div id="myCarousel" class="carousel slide">
-	<!-- Carousel items -->
-	<div class="carousel-inner">
-	  <div class="active item">
-	    <div id="player"></div>	    
-	  </div>
-	  <div class="item">
-	    <img class="" src="img/groups-event.jpg" /> 
-	  </div>
-	  <div class="item">
-	    <img class="" src="img/sambusa.jpg" /> 
-	  </div>
-	  <div class="item">
-	    <img class="" src="img/bar.jpg" /> 
+	</div>
+
+	<div class="span8">     
+	  <div id="myCarousel" class="carousel slide">
+	    <!-- Carousel items -->
+	    <div class="carousel-inner">
+	      <div class="active item">
+		<div id="player"></div>	    
+	      </div>
+	      <div class="item">
+		<img class="" src="img/groups-event.jpg" /> 
+	      </div>
+	      <div class="item">
+		<img class="" src="img/sambusa.jpg" /> 
+	      </div>
+	      <div class="item">
+		<img class="" src="img/bar.jpg" /> 
+	      </div>
+	    </div>
+	    <!-- Carousel nav -->
+	    ##<a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+	    ##<a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
 	  </div>
 	</div>
-	<!-- Carousel nav -->
-	##<a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-	##<a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
-      </div>
-      </div>
 
+      </div>
 
     </div>
 
