@@ -7532,8 +7532,9 @@ text-align: center;
   background-image: url('../img/gradhat.png');
   background-position: 0px 2px;
 }
+#myCarousel,
 iframe {
-  max-width: 100%;
+  max-width: 100% !important;
 }
 #myCarousel {
   width: 480px;
