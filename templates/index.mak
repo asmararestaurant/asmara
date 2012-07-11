@@ -8,49 +8,53 @@ active
 <%block name="footer_js">
 <script type="text/javascript">
 
-  jQuery(document).ready(function($) {
+jQuery(document).ready(function($) {
 
-  $('.carousel').carousel({
-  interval: 3000
-  })
-  });
+    $('.carousel').carousel({
+	interval: 3000
+    })
+});
 
-  // 2. This code loads the IFrame Player API code asynchronously.
-  var tag = document.createElement('script');
-  tag.src = "http://www.youtube.com/player_api";
-  var firstScriptTag = document.getElementsByTagName('script')[0];
-  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+// 2. This code loads the IFrame Player API code asynchronously.
+var tag = document.createElement('script');
+tag.src = "http://www.youtube.com/player_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-  // 3. This function creates an <iframe> (and YouTube player)
-    //    after the API code downloads.
-    var player;
-    function onYouTubePlayerAPIReady() {
+// 3. This function creates an <iframe> (and YouTube player)
+//    after the API code downloads.
+var player;
+function onYouTubePlayerAPIReady() {
     player = new YT.Player('player', {
-    height: '267',
-    width: '480',
-    videoId: 'AB0RODOs2xY',
-    events: {
-    'onReady': onPlayerReady,
-    'onStateChange': onPlayerStateChange
-    }
+	height: '265',
+	width: '480',
+	videoId: 'AB0RODOs2xY',
+	events: {
+	    'onReady': onPlayerReady,
+	    'onStateChange': onPlayerStateChange
+	}
     });
-    }
+}
 
-    // 4. The API will call this function when the video player is ready.
-    function onPlayerReady(event) {
+// 4. The API will call this function when the video player is ready.
+function onPlayerReady(event) {
     //event.target.playVideo();
-    }
+}
 
-    // 5. The API calls this function when the player's state changes.
-    //    The function indicates that when playing a video (state=1),
-    //    the player should play for six seconds and then stop.
-    var done = false;
-    function onPlayerStateChange(event) {
+// 5. The API calls this function when the player's state changes.
+//    The function indicates that when playing a video (state=1),
+//    the player should play for six seconds and then stop.
+var done = false;
+function onPlayerStateChange(event) {
     if (event.data == YT.PlayerState.PLAYING) {
-    alert('playing');
-    $('.carousel').carousel('pause');
+	console.log('playing');
+	$('.carousel').carousel('pause');
     }
+    else if (event.data == YT.PlayerState.PAUSED) {
+	console.log('paused');
+	$('.carousel').carousel('cycle');	
     }
+}
 
 </script>
 </%block>
@@ -116,30 +120,48 @@ active
     <div class="post-container" style="padding: 15px;height: auto;">            
       <div class="row-fluid">    
 	<div class="span4">
-	  <h3 style="text-align:center;">San Diego's Best</h3>
+	  <h3 style="">San Diego's Best</h3>
 	  <p><i><a href="http://www.sandiegomagazine.com/San-Diego-Magazine/June-2011/Best-2011-Restaurants/">The San Diego Magazine</a> selected Asmara Restaurant as the
 	      best 2011 Eritrean & Ethiopian Restaurant in San Dego, CA.</i></p>
 	  <p style="text-align: center"><img src="img/sdmlogo.png" /></p>
 	</div>	
 	<div class="span4">
-	  <h3 style="text-align:center;">Location</h3>	  
+	  <h3 style="">Location</h3>	  
 	  <a target="_blank" href="https://maps.google.com/maps?q=4155+University+Avenue+San+Diego,+CA+92105&hl=en&sll=43.85869,-79.298632&sspn=0.00902,0.01796&hnear=4155+University+Ave,+San+Diego,+California+92105&t=m&z=16">
 	    <p style="text-align: center"><img src="img/map.png" alt="google map" width="300" height="181"/></p>
 	  </a>
 	</div>	
-	<div class="span4" style="text-align:center;">
+	<div class="span4" style="">
+
+	  <div class="row-fluid">    
+	    <div class="span6" style="">
+	      <h3>Features</h3>
+
+	      <ul id="" class="amenities unstyled">  
+		<li><i class="icon-car"></i>20 free parking spots</li>
+		<li><i class="icon-wifi"></i>Wifi</li>
+		<li><i class="icon-martini"></i>Beer & Wine</li>
+		<li><i class="icon-tv"></i>TV</li>
+		<li><i class="icon-takeout"></i>Take-out</li>  
+	      </ul>
+	    </div>
+
+	    <div class="span5" style="">
+	      <h3>Events</h3>
+
+	      <ul id="" class="amenities unstyled">  
+		<li><i class="icon-group"></i>Group events</li>
+		<li><i class="icon-gradhat"></i>Graduations</li>
+		<li><i class="icon-birthday"></i>Birthdays</li>
+		<li><i class="icon-heart icon-white"></i>Engagements</li>
+		<li><i class="icon-balloon"></i>Parties</li>  
+	      </ul>
+	    </div>
+	  </div>
+
 	  <h3>Hours</h3>
 	  Mon - Sun&nbsp&nbsp&nbsp&nbsp11am - 10pm
-	  <br/>
-	  <br/>
-	  <h3>Features</h3>
-	  <ul id="" class="amenities unstyled">  
-	    <li><i class="icon-car"></i>20 free parking spots</li>
-	    <li><i class="icon-wifi"></i>Wifi</li>
-	    <li><i class="icon-martini"></i>Beer & Wine</li>
-	    <li><i class="icon-tv"></i>TV</li>
-	    <li><i class="icon-takeout"></i>Take-out</li>  
-	  </ul>
+
 	</div>
 
       </div>
