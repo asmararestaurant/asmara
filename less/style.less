@@ -11,6 +11,18 @@ body {
     font-size: 15px;
 }
 
+@media (max-width: 767px) {
+    body {
+        background-image: none !important;
+        background-color: #ccc;
+    }
+}
+@media (max-width: 480px) {
+    body {
+        background-image: none !important;
+    }
+}
+
 h1, h2, h3, h4, h5, h6, p {
     font-family: 'Advent Pro', Helvetica, Arial, sans-serif;
 }
@@ -37,13 +49,15 @@ h1, h2, h3, h4, h5, h6, p {
 .menu ol > ul {
     margin-bottom: 15px;
 }
+/*
 
 #thumbs {
 text-align: center;
 
 }
+#thumbs .navigation,
 #thumbs ul {
-    //width: 400px;
+    width: 362px;
 }
 
 #thumbs li {
@@ -51,6 +65,7 @@ text-align: center;
     //width: 100px;
     margin: 4px;
 }
+*/
 
 @text-color: white;
 //@text-color: black;
@@ -109,3 +124,73 @@ text-align: center;
     padding-right: 2%;
 }
 
+.amenities li {
+    margin-bottom: 3px;
+}
+.amenities i {
+    margin: 0px 6px 0px 0px;
+    bototm: 0px;
+}
+.amenities [class^="icon-"],
+.amenities [class*=" icon-"] {
+  vertical-align: text-middle;  
+}
+
+.amenities {
+    //margin-right: 5px;
+}
+
+/* Custom icons */
+.icon-car {
+    background-image: url('../img/steering_wheel_12x12.png');   
+    background-position: 0px 2px;  
+}
+.icon-wifi {
+    background-image: url('../img/wifi.png');   
+    background-position: 0 3px;  
+}
+.icon-tv {
+    background-image: url('../img/tv.png');   
+    background-position: 0 0;  
+}
+.icon-takeout {
+    background-image: url('../img/coffee.png');   
+    background-position: 0 0;  
+}
+
+.icon-martini {
+    background-image: url('../img/martini.png');   
+    background-position: 0 0;  
+}
+
+iframe {max-width:100%;} 
+
+.logo {
+    //vertical-align:middle;
+}
+
+.logo_background{
+    //background-color: black;
+    //opacity:1;
+}
+
+#myCarousel
+{
+    width: 480px;
+    margin:0px auto;
+    //float:none;
+}
+
+#myCarousel img
+{
+    width: auto;
+    height: 267px;
+    //margin:0px auto;
+    //float:none;
+}
+
+.tag-line {
+    font-family: 'Open Sans Condensed', Helvetica, Arial, sans-serif;
+    line-height: 1;
+    font-size: 30px;
+}

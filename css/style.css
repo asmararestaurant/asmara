@@ -4350,7 +4350,7 @@ input[type="submit"].btn.btn-mini {
   margin-bottom: 18px;
 }
 .navbar-inner {
-  min-height: 40px;
+  min-height: 30px;
   padding-left: 20px;
   padding-right: 20px;
   background-color: #0e0e0e;
@@ -4399,7 +4399,7 @@ input[type="submit"].btn.btn-mini {
 .navbar .brand {
   float: left;
   display: block;
-  padding: 8px 20px 12px;
+  padding: 3px 20px 7px;
   margin-left: -20px;
   font-size: 20px;
   font-weight: 200;
@@ -4408,7 +4408,7 @@ input[type="submit"].btn.btn-mini {
 }
 .navbar .navbar-text {
   margin-bottom: 0;
-  line-height: 40px;
+  line-height: 30px;
 }
 .navbar .navbar-link {
   color: #ffffff;
@@ -4418,8 +4418,8 @@ input[type="submit"].btn.btn-mini {
 }
 .navbar .btn,
 .navbar .btn-group {
-  margin-top: 5px;
-  margin-top: 5px;
+  margin-top: 0px;
+  margin-top: 0px;
 }
 .navbar .btn-group .btn {
   margin: 0;
@@ -4449,8 +4449,8 @@ input[type="submit"].btn.btn-mini {
 .navbar-form select,
 .navbar-form .radio,
 .navbar-form .checkbox {
-  margin-top: 5px;
-  margin-top: 5px;
+  margin-top: 0px;
+  margin-top: 0px;
 }
 .navbar-form input,
 .navbar-form select {
@@ -4474,8 +4474,8 @@ input[type="submit"].btn.btn-mini {
 .navbar-search {
   position: relative;
   float: left;
-  margin-top: 6px;
-  margin-top: 6px;
+  margin-top: 1px;
+  margin-top: 1px;
   margin-bottom: 0;
 }
 .navbar-search .search-query {
@@ -4583,7 +4583,7 @@ input[type="submit"].btn.btn-mini {
 }
 .navbar .nav > li > a {
   float: none;
-  padding: 9px 10px 11px;
+  padding: 4px 10px 6px;
   line-height: 19px;
   color: #ffffff;
   text-decoration: none;
@@ -4592,12 +4592,12 @@ input[type="submit"].btn.btn-mini {
 .navbar .btn {
   display: inline-block;
   padding: 4px 10px 4px;
-  margin: 5px 5px 6px;
+  margin: 0px 5px 1px;
   line-height: 18px;
 }
 .navbar .btn-group {
   margin: 0;
-  padding: 5px 5px 6px;
+  padding: 0px 5px 1px;
 }
 .navbar .nav > li > a:hover {
   background-color: transparent;
@@ -4611,7 +4611,7 @@ input[type="submit"].btn.btn-mini {
   background-color: #333333;
 }
 .navbar .divider-vertical {
-  height: 40px;
+  height: 30px;
   width: 1px;
   margin: 0 9px;
   overflow: hidden;
@@ -7370,6 +7370,17 @@ body {
   background-size: 100%;
   font-size: 15px;
 }
+@media (max-width: 767px) {
+  body {
+    background-image: none !important;
+    background-color: #ccc;
+  }
+}
+@media (max-width: 480px) {
+  body {
+    background-image: none !important;
+  }
+}
 h1,
 h2,
 h3,
@@ -7394,12 +7405,23 @@ p {
 .menu ol > ul {
   margin-bottom: 15px;
 }
+/*
+
 #thumbs {
-  text-align: center;
+text-align: center;
+
 }
+#thumbs .navigation,
+#thumbs ul {
+    width: 362px;
+}
+
 #thumbs li {
-  margin: 4px;
+    //float: left;
+    //width: 100px;
+    margin: 4px;
 }
+*/
 .post-container {
   background-image: url('../img/dvsup.png');
   background-repeat: repeat;
@@ -7461,4 +7483,52 @@ p {
 .project-box .caption {
   padding-left: 2%;
   padding-right: 2%;
+}
+.amenities li {
+  margin-bottom: 3px;
+}
+.amenities i {
+  margin: 0px 6px 0px 0px;
+  bototm: 0px;
+}
+.amenities [class^="icon-"],
+.amenities [class*=" icon-"] {
+  vertical-align: text-middle;
+}
+/* Custom icons */
+.icon-car {
+  background-image: url('../img/steering_wheel_12x12.png');
+  background-position: 0px 2px;
+}
+.icon-wifi {
+  background-image: url('../img/wifi.png');
+  background-position: 0 3px;
+}
+.icon-tv {
+  background-image: url('../img/tv.png');
+  background-position: 0 0;
+}
+.icon-takeout {
+  background-image: url('../img/coffee.png');
+  background-position: 0 0;
+}
+.icon-martini {
+  background-image: url('../img/martini.png');
+  background-position: 0 0;
+}
+iframe {
+  max-width: 100%;
+}
+#myCarousel {
+  width: 480px;
+  margin: 0px auto;
+}
+#myCarousel img {
+  width: auto;
+  height: 267px;
+}
+.tag-line {
+  font-family: 'Open Sans Condensed', Helvetica, Arial, sans-serif;
+  line-height: 1;
+  font-size: 30px;
 }
