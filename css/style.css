@@ -7367,8 +7367,11 @@ body {
   background-image: url('../img/background_blur.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: 100%;
   font-size: 15px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 @media (max-width: 767px) {
   body {
