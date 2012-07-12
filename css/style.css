@@ -7374,15 +7374,10 @@ body {
   background-size: cover;
 }
 @media (max-width: 767px) {
-  body {
-    background-image: none !important;
-    background-color: #f1f1f1;
-  }
+  
 }
 @media (max-width: 480px) {
-  body {
-    background-image: none !important;
-  }
+  
 }
 h1,
 h2,
