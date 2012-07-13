@@ -41,7 +41,7 @@ div.slideshow a.advance-link {
 div.loader,
 div.slideshow a.advance-link,
 div.caption-container {
-	height: 502px; /* This should be set to be at least the height of the largest image in the slideshow with padding */	
+	height: 480px; /* This should be set to be at least the height of the largest image in the slideshow with padding */	
 }
 
 div.slideshow-container {
@@ -55,7 +55,7 @@ div.loader {
 	position: absolute;
 	top: 0;
 	left: 0;
-	background-image: url('images/loader.gif');
+	background-image: url('../img/loader.gif');
 	background-repeat: no-repeat;
 	background-position: center;
 }
@@ -67,7 +67,7 @@ div.slideshow span.image-wrapper {
 }
 div.slideshow a.advance-link {
 	display: block;
-	line-height: 502px; /* This should be set to be at least the height of the largest image in the slideshow with padding */
+	line-height: 400px; /* This should be set to be at least the height of the largest image in the slideshow with padding */
 	text-align: center;
 }
 
@@ -124,12 +124,11 @@ div.photo-index {
 div.navigation-container {
 	float: left;
 	position: relative;
-	left: 50%;
 }
 div.navigation {
 	float: left;
 	position: relative;
-	left: -50%;
+
 }
 div.navigation a.pageLink {
 	display: block;

@@ -1,4 +1,4 @@
-jQuery(document).ready(function($) {
+			jQuery(document).ready(function($) {
 				// We only want these styles applied when javascript is enabled
 				$('div.content').css('display', 'block');
 
@@ -15,7 +15,7 @@ jQuery(document).ready(function($) {
 				// Initialize Advanced Galleriffic Gallery
 				var gallery = $('#thumbs').galleriffic({
 					delay:                     2500,
-					numThumbs:                 10,
+					numThumbs:                 6,
 					preloadAhead:              10,
 					enableTopPager:            false,
 					enableBottomPager:         false,
@@ -76,9 +76,10 @@ jQuery(document).ready(function($) {
 					e.preventDefault();
 				});
 
-				/***************************************************************************************
+				/****************************************************************************************/
 
-			
+				/**** Functions to support integration of galleriffic with the jquery.history plugin 
+
 				// PageLoad function
 				// This function is called when:
 				// 1. after calling $.historyInit();
@@ -96,7 +97,7 @@ jQuery(document).ready(function($) {
 
 				// Initialize history plugin.
 				// The callback is called at once by present location.hash. 
-				//$.historyInit(pageload, "advanced.html");
+				$.historyInit(pageload, "advanced.html");
 
 				// set onlick event for buttons using the jQuery 1.3 live method
 				$("a[rel='history']").live('click', function(e) {
@@ -112,6 +113,6 @@ jQuery(document).ready(function($) {
 
 					return false;
 				});
-
-				****************************************************************************************/
+****/
+				/****************************************************************************************/
 			});

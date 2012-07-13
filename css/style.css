@@ -7403,8 +7403,16 @@ p {
 .menu ol > ul {
   margin-bottom: 15px;
 }
+div.navigation a.prev {
+  background-image: url(../img/prevPageArrowWhite.gif);
+}
+div.navigation a.next {
+  background-image: url(../img/nextPageArrowWhite.gif);
+}
+div.loader {
+  background-image: url(../img/loaderWhite.gif);
+}
 /*
-
 #thumbs {
 text-align: center;
 
@@ -7544,6 +7552,8 @@ iframe {
 }
 .tag-line {
   font-family: 'Goudy Bookletter 1911', serif;
+  text-shadow: 1px 1px 1px #aaa;
+  color: white;
   line-height: 1;
   font-size: 25px;
 }
