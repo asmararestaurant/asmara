@@ -15,7 +15,7 @@
 				// Initialize Advanced Galleriffic Gallery
 				var gallery = $('#thumbs').galleriffic({
 					delay:                     2500,
-					numThumbs:                 6,
+					numThumbs:                 8,
 					preloadAhead:              10,
 					enableTopPager:            false,
 					enableBottomPager:         false,
