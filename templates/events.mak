@@ -28,201 +28,32 @@ active
 </style>
 </%block>
 
+<div class="container-fluid">
+
 <div class="row-fluid">
 
   <div class="span1 hidden-phone">
   </div>
 
   <div class="span10">
-    <div class="post-container" style="height: 600px;padding: 40px 30px 30px 30px;">
-      
-      <div class="navigation-container">
+    <div class="post-container" style="height: 600px;padding: 20px;">
+      <h2>Events</h2>
 
-	<div id="thumbs" class="navigation">
-	  <a class="pageLink prev" style="visibility: hidden;" href="#" title="Previous Page"></a>
+      <div class="span2"></div>
 
-	  <ul class="thumbs  noscript">
+      <div class="span4">
 
-	    <li>
-	      <a class="thumb " name="" href="img/events/IMG_0628.jpg" title="Title #0">
-		<img src="img/events/thumbs/IMG_0628.jpg" alt="Title #0" />
-	      </a>
-	      <div class="caption">
-		<div class="download">
-		  ##<a href="img/events/IMG_0628.jpg">Download Original</a>
-		</div>
-		<div class="image-title"></div>
-		##<div class="image-desc">Description</div>
-	      </div>
-	    </li>
-
-	    <li>
-	      <a class="thumb " name="" href="img/events/IMG_0574.jpg" title="">
-		<img src="img/events/thumbs/IMG_0574.jpg" alt="" />
-	      </a>
-	      <div class="caption">
-		<div class="download">
-		  ##<a href="img/events/IMG_0574.jpg">Download Original</a>
-		</div>
-		<div class="image-title"></div>
-		##<div class="image-desc">Description</div>
-	      </div>
-	    </li>
-
-	    <li>
-	      <a class="thumb " name="" href="img/events/IMG_0580.jpg" title="">
-		<img src="img/events/thumbs/IMG_0580.jpg" alt="" />
-	      </a>
-	      <div class="caption">
-		<div class="download">
-		  ##<a href="img/events/IMG_0580.jpg">Download Original</a>
-		</div>
-		<div class="image-title"></div>
-		##<div class="image-desc">Description</div>
-	      </div>
-	    </li>
-
-	    <li>
-	      <a class="thumb " name="" href="img/events/IMG_0566.jpg" title="">
-		<img src="img/events/thumbs/IMG_0566.jpg" alt="" />
-	      </a>
-	      <div class="caption">
-		<div class="download">
-		  ##<a href="img/events/IMG_0566.jpg">Download Original</a>
-		</div>
-		<div class="image-title"></div>
-		##<div class="image-desc">Description</div>
-	      </div>
-	    </li>
-
-	    <li>
-	      <a class="thumb " name="" href="img/events/IMG_0565.jpg" title="">
-		<img src="img/events/thumbs/IMG_0565.jpg" alt="" />
-	      </a>
-	      <div class="caption">
-		<div class="download">
-		  ##<a href="img/events/IMG_0565.jpg">Download Original</a>
-		</div>
-		<div class="image-title"></div>
-		##<div class="image-desc">Description</div>
-	      </div>
-	    </li>
-
-	    <li>
-	      <a class="thumb " name="" href="img/events/IMG_0563.jpg" title="">
-		<img src="img/events/thumbs/IMG_0563.jpg" alt="" />
-	      </a>
-	      <div class="caption">
-		<div class="download">
-		  ##<a href="img/events/IMG_0563.jpg">Download Original</a>
-		</div>
-		<div class="image-title"></div>
-		##<div class="image-desc">Description</div>
-	      </div>
-	    </li>
-
-	    <li>
-	      <a class="thumb " name="" href="img/events/IMG_0572.jpg" title="">
-		<img src="img/events/thumbs/IMG_0572.jpg" alt="" />
-	      </a>
-	      <div class="caption">
-		<div class="download">
-		  ##<a href="img/events/IMG_0572.jpg">Download Original</a>
-		</div>
-		<div class="image-title"></div>
-		##<div class="image-desc">Description</div>
-	      </div>
-	    </li>
-
-
-	    <li>
-	      <a class="thumb " name="" href="img/events/IMG_0570.jpg" title="">
-		<img src="img/events/thumbs/IMG_0570.jpg" alt="" />
-	      </a>
-	      <div class="caption">
-		<div class="download">
-		  ##<a href="img/events/IMG_0570.jpg">Download Original</a>
-		</div>
-		<div class="image-title"></div>
-		##<div class="image-desc">Description</div>
-	      </div>
-	    </li>
-
-	    <li>
-	      <a class="thumb " name="" href="img/events/IMG_0581.jpg" title="">
-		<img src="img/events/thumbs/IMG_0581.jpg" alt="" />
-	      </a>
-	      <div class="caption">
-		##<div class="download">
-		  ##<a href="img/events/IMG_0581.jpg">Download Original</a>
-		  ##</div>
-		<div class="image-title"></div>
-		##<div class="image-desc">Description</div>
-	      </div>
-	    </li>
-
-	    <li>
-	      <a class="thumb " name="" href="img/events/380937_208218849261618_1530498718_n.jpg" title="">
-		<img src="img/events/thumbs/380937_208218849261618_1530498718_n.jpg" alt="" />
-	      </a>
-	    </li>
-
-	    <li>
-	      <a class="thumb " name="" href="img/events/383612_198091693607667_544605795_n.jpg" title="">
-		<img src="img/events/thumbs/383612_198091693607667_544605795_n.jpg" alt="" />
-	      </a>
-	    </li>
-
-	    <li>
-	      <a class="thumb " name="" href="img/events/385091_200407876709382_1239312502_n.jpg" title="">
-		<img src="img/events/thumbs/385091_200407876709382_1239312502_n.jpg" alt="" />
-	      </a>
-	    </li>
-
-	    <li>
-	      <a class="thumb " name="" href="img/events/387834_208216829261820_1734614126_n.jpg" title="">
-		<img src="img/events/thumbs/387834_208216829261820_1734614126_n.jpg" alt="" />
-	      </a>
-	    </li>
-
-	    <li>
-	      <a class="thumb " name="" href="img/events/395802_208218225928347_1247073960_n.jpg" title="">
-		<img src="img/events/thumbs/395802_208218225928347_1247073960_n.jpg" alt="" />
-	      </a>
-	    </li>
-
-	    <li>
-	      <a class="thumb " name="" href="img/events/396739_208217462595090_846366421_n.jpg" title="">
-		<img src="img/events/thumbs/396739_208217462595090_846366421_n.jpg" alt="" />
-	      </a>
-	    </li>
-
-	    <li>
-	      <a class="thumb " name="" href="img/events/407448_208216182595218_2145616501_n.jpg" title="">
-		<img src="img/events/thumbs/407448_208216182595218_2145616501_n.jpg" alt="" />
-	      </a>
-	    </li>
-
-	  </ul>
-	  <a class="pageLink next" style="visibility: hidden;" href="#" title="Next Page"></a>
-
-	</div>
+	<table style="width:194px;text-align:center;margin: 0 auto;"><tr><td align="center" style="height:194px;background:url(https://picasaweb.google.com/s/c/transparent_album_background.gif) no-repeat left"><a href="https://picasaweb.google.com/116594080310539793619/UN?authuser=0&feat=embedwebsite"><img src="https://lh4.googleusercontent.com/-FWL5bWnL4EA/UK7kvM0imDE/AAAAAAAAAMM/V6FTUuGBrfg/s160-c/UN.jpg" width="160" height="160" style="margin:1px 0 0 4px;"></a></td></tr><tr><td style="text-align:center;font-family:arial,sans-serif"><a href="https://picasaweb.google.com/116594080310539793619/UN?authuser=0&feat=embedwebsite" style="color:#8D8D8D;font-weight:bold;text-decoration:none;">UN</a></td></tr></table>
       </div>
 
-      <div style="text-align: center">
-	<div class="content">
-	  <div class="slideshow-container">
-	    <div id="controls" class="controls"></div>
-	    <div id="loading" class="loader"></div>
-	    <div id="slideshow" class="slideshow"></div>
-	  </div>
-	  ##<div id="caption" class="caption-container">
-	    ##<div class="photo-index"></div>
-	  ##</div>
-	</div>
+      <div class="span4">
+	<table style="width:194px;text-align:center;margin: 0 auto;"><tr><td align="center" style="height:194px;background:url(https://picasaweb.google.com/s/c/transparent_album_background.gif) no-repeat left"><a href="https://picasaweb.google.com/116594080310539793619/Events?authuser=0&feat=embedwebsite"><img src="https://lh6.googleusercontent.com/-7RC4OcYKbFw/UK7qGklamGE/AAAAAAAAAXA/M8fCrZ9qM9g/s160-c/Events.jpg" width="160" height="160" style="margin:1px 0 0 4px;"></a></td></tr><tr><td style="text-align:center;font-family:arial,sans-serif"><a href="https://picasaweb.google.com/116594080310539793619/Events?authuser=0&feat=embedwebsite" style="color:#8D8D8D;font-weight:bold;text-decoration:none;">Events</a></td></tr></table>
       </div>
-
     </div>
+
   </div>
 </div>
+</div>
 <br/>
+
+</div>

@@ -5,6 +5,7 @@
 active
 </%block>
 
+<div class="container-fluid">
 
 <div class="row-fluid">
   <div class="span1 hidden-phone">
@@ -32,3 +33,5 @@ active
 
 </div>
 <br/>
+
+</div>

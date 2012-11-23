@@ -83,9 +83,9 @@
       </div>
     </div>
 
-    <div class="container-fluid">
+    ##<div class="container-fluid">
       ${next.body()}
-    </div> <!-- /container -->
+    ##</div> <!-- /container -->
     
     <br/>
     

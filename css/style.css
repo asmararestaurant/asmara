@@ -5945,6 +5945,7 @@ a.badge:hover {
 */
 h3 {
   color: #c83025;
+  font-size: 20px;
 }
 .navbar-inner {
   -webkit-border-radius: 0;
@@ -5983,7 +5984,7 @@ p {
   font-weight: 400;
 }
 .menu ol > ul > li {
-  width: 85%;
+  width: 100%;
 }
 .menu ol > ol > li,
 .menu ol > ul {

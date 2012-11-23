@@ -59,6 +59,8 @@ function onPlayerStateChange(event) {
 </script>
 </%block>
 
+<div class="container-fluid">
+      
 <div class="row-fluid">
   <div class="span1 hidden-phone">
   </div>
@@ -120,16 +122,17 @@ function onPlayerStateChange(event) {
     <div class="post-container" style="padding: 15px;height: auto;">            
       <div class="row-fluid">    
 	<div class="span4">
-	  <h3 style="">San Diego's Best</h3>
-	  <p><i><a href="http://www.sandiegomagazine.com/San-Diego-Magazine/June-2011/Best-2011-Restaurants/">The San Diego Magazine</a> selected Asmara Restaurant as the
-	      best 2011 Eritrean & Ethiopian Restaurant in San Dego, CA.</i></p>
+	  <h3 >San Diego's Best</h3>
+	  <p style="font-size:15px;"><i><a href="http://www.sandiegomagazine.com/San-Diego-Magazine/June-2011/Best-2011-Restaurants/">The San Diego Magazine</a></i> selected Asmara Restaurant as the
+	      best 2011 Eritrean & Ethiopian Restaurant in San Dego, CA.</p>
 	  <p style="text-align: center"><img src="img/sdmlogo.png" /></p>
 	</div>	
 	<div class="span4">
-	  <h3 style="">Location</h3>	  
+	  <h3 style="">Location</h3>
 	  <a target="_blank" href="https://maps.google.com/maps?q=4155+University+Avenue+San+Diego,+CA+92105&hl=en&sll=43.85869,-79.298632&sspn=0.00902,0.01796&hnear=4155+University+Ave,+San+Diego,+California+92105&t=m&z=16">
 	    <p style="text-align: center"><img src="img/map.png" alt="google map" width="300" height="181"/></p>
 	  </a>
+	  <a target="_blank" href="https://maps.google.com/maps?q=4155+University+Avenue+San+Diego,+CA+92105&hl=en&sll=43.85869,-79.298632&sspn=0.00902,0.01796&hnear=4155+University+Ave,+San+Diego,+California+92105&t=m&z=16"><p style="text-align:center;">4155 University Avenue San Diego San Diego, CA 92105</p></a>
 	</div>	
 	<div class="span4" style="">
 
@@ -172,5 +175,6 @@ function onPlayerStateChange(event) {
 </div>
 <br/>
 
+</div>
 
 ##<p ALIGN=center><iframe width="562" height="314" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.ca/maps?q=&amp;layer=c&amp;sll=32.749538,-117.105192&amp;cid=1074243157810880640&amp;panoid=-hlXtSoCBlgVAVhVAgTFjg&amp;cbp=13,292.48,,0,9.34&amp;hl=en&amp;gl=CA&amp;ie=UTF8&amp;hq=+loc:+&amp;hnear=&amp;t=m&amp;cbll=32.749527,-117.105149&amp;ll=32.747909,-117.10516&amp;spn=0.005667,0.012059&amp;z=16&amp;source=embed&amp;output=svembed"></iframe><br /><small><a href="https://maps.google.ca/maps?q=&amp;layer=c&amp;sll=32.749538,-117.105192&amp;cid=1074243157810880640&amp;panoid=-hlXtSoCBlgVAVhVAgTFjg&amp;cbp=13,292.48,,0,9.34&amp;hl=en&amp;gl=CA&amp;ie=UTF8&amp;hq=+loc:+&amp;hnear=&amp;t=m&amp;cbll=32.749527,-117.105149&amp;ll=32.747909,-117.10516&amp;spn=0.005667,0.012059&amp;z=16&amp;source=embed" style="color:#0000FF;text-align:left">View Larger Map</a></small></p>
