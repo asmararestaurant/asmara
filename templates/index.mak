@@ -136,7 +136,7 @@ function onPlayerStateChange(event) {
 	</div>	
 	<div class="span4" style="">
 
-	  <div class="row-fluid">    
+	  <div class="row-fluid">
 	    <div class="span6" style="">
 	      <h3>Features</h3>
 
@@ -145,12 +145,12 @@ function onPlayerStateChange(event) {
 		<li><i class="icon-wifi"></i>Wifi</li>
 		<li><i class="icon-martini"></i>Beer & Wine</li>
 		<li><i class="icon-tv"></i>TV</li>
-		<li><i class="icon-takeout"></i>Take-out</li>  
+		<li><i class="icon-takeout"></i>Take-out</li>
 	      </ul>
 	    </div>
 
 	    <div class="span5" style="">
-	      <h3>Events</h3>
+	      <h3>Gallery</h3>
 
 	      <ul id="" class="amenities unstyled">  
 		<li><i class="icon-group"></i>Group events</li>
